@@ -6,7 +6,7 @@ public class Program
     public static void Main(String[] args)
     {
         Console.WriteLine(" ********* Welcome in The Basic Logical Programming World ********");
-        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n");
+        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n Harmonic Number 4\n");
         bool check=true;
         while (check)
         { 
@@ -25,6 +25,10 @@ public class Program
                 case 3:
                     LeapYear  year = new LeapYear();
                    year.LeapYears();
+                    break;
+                case 4:
+                    HarmonicNumbers  number = new HarmonicNumbers();
+                    number.HarmonicNumber();
                     break;
                 default : 
                     Console.WriteLine("Please Enter the valid Number to Execution the Your Program");
