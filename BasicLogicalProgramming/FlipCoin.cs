@@ -15,7 +15,7 @@ namespace BasicLogicalProgramming
         public void FlipCoins()
         {
 
-            for (int i = 0; i < 200; i++)
+            for (int i = 1; i <= 200; i++)
             {
                 Random random = new Random();
                 double num = random.NextDouble();
@@ -28,10 +28,10 @@ namespace BasicLogicalProgramming
                     hCount++;
                 }
             }
-            double hPresentage = hCount  % 100;
-            double tPresentage = tCount  % 100;
-            Console.WriteLine("Percentage of the Coid of HEAD " + hPresentage);
-            Console.WriteLine("Percentage of the Coid of TAIL " + tPresentage);
+            double hPresentage =(double)( hCount * 100)/ FLIP_NUMBER_OF_COIN;
+            double tPresentage = (double)(tCount  * 100)/ FLIP_NUMBER_OF_COIN;
+            Console.WriteLine("Percentage of the Coin of HEAD " + hPresentage);
+            Console.WriteLine("Percentage of the Coin of TAIL " + tPresentage);
 
 
         }
