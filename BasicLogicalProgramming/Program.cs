@@ -6,7 +6,7 @@ public class Program
     public static void Main(String[] args)
     {
         Console.WriteLine(" ********* Welcome in The Basic Logical Programming World ********");
-        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n Harmonic Number 4\n Prime Factor 5\n Quotient and Remainder 6\n Swapping 7\n");
+        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n Harmonic Number 4\n Prime Factor 5\n Quotient and Remainder 6\n Swapping 7\n EvenAnd Odd 8\n");
         bool check=true;
         while (check)
         { 
@@ -38,9 +38,13 @@ public class Program
                     QuotientAndRemainder numbers = new QuotientAndRemainder ();
                     numbers.RemienderAndQuotient();
                     break;
-                        case 7:
+                case 7:
                     SwapTwoNumber  swap = new SwapTwoNumber();
                     swap.Swap();
+                    break;
+                case 8:
+                    EvenOrOdd  checking = new EvenOrOdd ();
+                    checking.Check ();
                     break;
                 default : 
                     Console.WriteLine("Please Enter the valid Number to Execution the Your Program");
