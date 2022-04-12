@@ -6,7 +6,7 @@ public class Program
     public static void Main(String[] args)
     {
         Console.WriteLine(" ********* Welcome in The Basic Logical Programming World ********");
-        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n Harmonic Number 4\n Prime Factor 5\n Quotient and Remainder 6\n Swapping 7\n EvenAnd Odd 8\n VowelAndConsonents 9\n");
+        Console.WriteLine("flip coin number 1\n Square of Two 2\n Leap Year 3\n Harmonic Number 4\n Prime Factor 5\n Quotient and Remainder 6\n Swapping 7\n EvenAnd Odd 8\n VowelAndConsonents 9\n FactorialNumber 11\n Factorial Number without Recurtion 12\n");
         bool check=true;
         while (check)
         { 
@@ -49,6 +49,15 @@ public class Program
                 case 9:
                    VowelConsonents  charector = new VowelConsonents ();
                     charector.VowelAndConsonent ();
+                    break;
+                case 11:
+                    Factorial fact = new Factorial ();
+                  int result= fact.Factor();
+                    Console.WriteLine ("Factorial is :->"+result);
+                    break;
+                case 12:
+                    FactorialWithoutRecursion  fact1 = new FactorialWithoutRecursion ();
+                    fact1.Factorial();
                     break;
                 default : 
                     Console.WriteLine("Please Enter the valid Number to Execution the Your Program");
