@@ -18,7 +18,7 @@ namespace BasicLogicalProgramming
             {
                 Console.WriteLine("First Number is Greatest Number" + " " + num1);
             }
-            else if (num2 < num1 && num1 < num3)
+            else if (num2 > num1 && num1 > num3)
             {
                 Console.WriteLine("Second Number is Greatest Number" + " " + num2);
             }
